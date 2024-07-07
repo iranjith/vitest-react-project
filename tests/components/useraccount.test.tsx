@@ -19,7 +19,7 @@ describe('UserAccount', () => {
 
     })
 
-    it('should not render Edit button when user is not Admin', () => {
+    it('should not render Edit button when user is not Admin', () => {  
         render(<UserAccount user={{ id: 1, name: "Ranjith", isAdmin:false  }} />);
 
         const button= screen.queryByRole("button");
