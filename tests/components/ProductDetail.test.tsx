@@ -1,9 +1,8 @@
 import { render, screen } from "@testing-library/react";
-import ProductDetail from "../../src/components/ProductDetail";
-import { products } from "../mocks/data";
 import { http, HttpResponse } from "msw";
-import { server } from "../mocks/server";
+import ProductDetail from "../../src/components/ProductDetail";
 import { db } from "../mocks/db";
+import { server } from "../mocks/server";
 
 describe("Product Detail", () => {
   let productId: number;
